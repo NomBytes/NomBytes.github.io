@@ -8,7 +8,8 @@
      document.getElementById("paragraph").innerHTML = "history";
    }
    </script>
-    <script> function myFunction2() {
+    <script>
+     function myFunction2() {
       document.getElementById("paragraph").innerHTML = "about";
     }
     </script>
@@ -34,12 +35,21 @@
 
 
     <nav>
-      <button type="button" onclick ="myFunction()"> history</button>
-      <button type ="button1" onclick ="myfunction2()">about</button>
-      <button type ="button2" onclick ="myfunction3()">general information</button>
+      <button type="historybutton" onclick ="myFunction()"> history</button>
+      <button type ="aboutbutton" onclick ="myfunction2()">about</button>
+      <button type ="informationbutton" onclick ="myfunction3()">general information</button>
     </nav>
     <textarea id = "paragraph" rows="4" cols="50">
     This is stuff
+    </textarea>
+    <textarea id = "history" rows="4" cols="50">
+    This is history
+    </textarea>
+    <textarea id = "about" rows="4" cols="50">
+    This is about
+    </textarea>
+    <textarea id = "info" rows="4" cols="50">
+    This is info
     </textarea>
 
   </html>
