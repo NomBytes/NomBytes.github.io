@@ -9,11 +9,11 @@
     var b2 = document.getElementById('b2');
     var b3 = document.getElementById('b3');
 
-   if(b1.onclick="changeText();") {
+   if(b1.onclick="myfunction();") {
                      document.getElementById('paragraph').innerHTML = "You pressed button 1";
                  }
 
-                 if(b2.onlick="changeText();") {
+                 if(b2.onlick="myFunction();") {
                      document.getElementById('paragraph').innerHTML = "You pressed Button 2";
                  }
 
@@ -38,19 +38,19 @@
 
     <nav>
       <button type="b1" onclick ="myFunction()"> history</button>
-      <button type ="b2" onclick ="myfunction2()">about</button>
-      <button type ="b3" onclick ="myfunction3()">general information</button>
+      <button type ="b2" onclick ="myfunction()">about</button>
+      <button type ="b3" onclick ="myfunction()">general information</button>
     </nav>
 
     <textarea id = "paragraph" rows="4" cols="50">
     This is history
     </textarea>
-    <textarea id = "about" rows="4" cols="50">
+    <!-- <textarea id = "about" rows="4" cols="50">
     This is about
     </textarea>
     <textarea id = "info" rows="4" cols="50">
     This is info
-    </textarea>
+    </textarea> -->
 
   </html>
 </body>
