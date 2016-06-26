@@ -4,18 +4,20 @@
   <title>Tourist Destinations</title>
   <link rel = 'stylesheet' href= 'style.css'>
   <script>
+    var b1 = document.getElementById('b1');
+    var b2 = document.getElementById('b2');
+    var b3 = document.getElementById('b3');
     function myFunction() {
      document.getElementById("history").innerHTML = "history";
    }
-   </script>
-    <script>
-     function myFunction2() {
-      document.getElementById("about").innerHTML = "about";
-    }
-    </script>
-    <script>
-    function myFunction3() {
-     document.getElementById("information").innerHTML = "information";
+   if(b1.onclick="changeText();") {
+                     document.getElementById('paragraph').innerHTML = "You pressed button 1";
+                 }
+
+                 if(b2.onlick="changeText();") {
+                     document.getElementById('paragraph').innerHTML = "You pressed Button 2";
+                 }
+
    }
 </script>
 </head>
@@ -35,9 +37,9 @@
 
 
     <nav>
-      <button type="historybutton" onclick ="myFunction()"> history</button>
-      <button type ="aboutbutton" onclick ="myfunction2()">about</button>
-      <button type ="informationbutton" onclick ="myfunction3()">general information</button>
+      <button type="b1" onclick ="myFunction()"> history</button>
+      <button type ="b2" onclick ="myfunction2()">about</button>
+      <button type ="b3" onclick ="myfunction3()">general information</button>
     </nav>
 
     <textarea id = "history" rows="4" cols="50">
